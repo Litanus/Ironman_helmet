@@ -1,7 +1,7 @@
 #include "Servo.h"
 
 Servo myServo12;
-Servo myServo2;
+Servo myServo22;
 byte val;
 
 void setup() {
@@ -9,8 +9,8 @@ void setup() {
   myServo12.attach(14);
   myServo12.write(0);
 
-  myServo2.attach(12);
-  myServo2.write(0);
+  myServo22.attach(12);
+  myServo22.write(0);
 
   pinMode(D1, INPUT);
 }
@@ -27,9 +27,9 @@ void loop() {
   delay(3000);
    val = digitalRead( D1);
    if( val == HIGH){
-      myServo2.write(0);
+      myServo22.write(0);
    }else{
-      myServo2.write(180);
+      myServo22.write(180);
    }
   delay(3000); 
   
