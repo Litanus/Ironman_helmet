@@ -1,13 +1,13 @@
 #include "Servo.h"
 
-Servo myServo1;
+Servo myServo12;
 Servo myServo2;
 byte val;
 
 void setup() {
   // put your setup code here, to run once:
-  myServo1.attach(14);
-  myServo1.write(0);
+  myServo12.attach(14);
+  myServo12.write(0);
 
   myServo2.attach(12);
   myServo2.write(0);
@@ -20,9 +20,9 @@ void loop() {
 
   val = digitalRead( D1);
    if( val == HIGH){
-      myServo1.write(0);
+      myServo12.write(0);
    }else{
-      myServo1.write(90);
+      myServo12.write(90);
    }
   delay(3000);
    val = digitalRead( D1);
